@@ -23,3 +23,5 @@ The use of the blog-client directory as an nested git repository is not a produc
 - Run `rails s` again and hopefully you'll get a running Ruby on Rails API backend.
 
 - Next, navigate into the blog-client directory and run `npm run dev`, then navigate to the 'Local:' URL as specified in the terminal, which will hopefully display a populated page with some  Blog articles.
+
+![image](https://github.com/semsion/ruby-api-ts-react-client/assets/15907315/71918327-5a38-4102-9ddf-f429bdaa3a7d)
