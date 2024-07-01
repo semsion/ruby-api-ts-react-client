@@ -1,24 +1,25 @@
-# README
+## Motivation
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repository serves as a proof of concept, to illustrate an understanding of how Ruby on Rails can be used as an API backend, with a TypeScript React (embedded) frontend.
 
-Things you may want to cover:
+## Caveat(s)
 
-* Ruby version
+The use of the blog-client directory as an nested git repository is not a production safe strategy, as when utlising branches, and other git features, there may be some conflicted file and directory tracking. This could be mitagated by adding teh nested directory to the parents .gitignore file (and managing the nested directory separately), or using git submodules. The directory stucture has been left as is for this example, as is simply a proof of concept.
 
-* System dependencies
+## Getting Started (steps to run the example project) 
 
-* Configuration
+- If you don't have them already installed, install Ruby and Ruby on Rails: https://gorails.com/setuptall
 
-* Database creation
+- Clone this repository.
 
-* Database initialization
+- Navigate into the root of the repository and run `rails db:migrate`. Once complete run `rails c` in the same directory. This will take you into the Rails console.
 
-* How to run the test suite
+- When inside the console run `Article` and you should see a response similar to `=> Article (call 'Article.lease_connection' to establish a connection)`. Then run `Article.create!(title: "My first blog post", body:  "text")`, replacing the text "text" with whatever text you would like. This will populate the SQLite database with some content. 
 
-* Services (job queues, cache servers, search engines, etc.)
+- Once you've finished adding database entries, type `exit` to leave the Rails console.
 
-* Deployment instructions
+- Then navigate into the root of the repository and run `rails s`; this may prompt you to install some other packages, by running something similar to `bundle install --gemfile ~/Documents/ruby/RubyOnRails/blog/Gemfile`, if so, run as is instructed in the terminal.
 
-* ...
+- Run `rails s` again and hopefully you'll get a running Ruby on Rails API backend.
+
+- Next, navigate into the blog-client directory and run `npm run dev`, then navigate to the 'Local:' URL as specified in the terminal, which will hopefully display a populated page with some  Blog articles.
