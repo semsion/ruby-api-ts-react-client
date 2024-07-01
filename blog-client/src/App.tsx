@@ -26,8 +26,8 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <h1>Blog Client</h1>
-      <p>Blog Client is a React application that consumes an API from Ruby on Rails.</p>
+      <h1 className='blog-title' >Blog Client</h1>
+      <p>Blog Client is a React application that consumes an article API from Ruby on Rails</p>
       <Articles articles={articles} title={''} body={''} />
     </div>
   );

@@ -20,8 +20,8 @@ const Articles: React.FunctionComponent<ArticleProps> = (props) => {
       <ul className='articles-ul' >
         {props.articles.map((article, index) => (
           <div key={index}>
-            <h2>{article.title}</h2>
-            <p>{article.body}</p>
+            <h2 className='article-header'>{article.title}</h2>
+            <p className="article-body">{article.body}</p>
           </div>
         ))}
       </ul>
