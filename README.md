@@ -20,7 +20,7 @@ The use of the blog-client directory as an nested git repository is not a produc
 
 - Then navigate into the root of the repository and run `rails s`; this may prompt you to install some other packages, by running something similar to `bundle install --gemfile ~/Documents/ruby/RubyOnRails/blog/Gemfile`, if so, run as is instructed in the terminal.
 
-- Run `rails s` again and hopefully you'll get a running Ruby on Rails API backend.
+- Run `rails s` again and hopefully you'll get a running Ruby on Rails API backend. If so, visiting the 'Listening on' URL from the terminal, such as http://127.0.0.1:3000/api/v1/articles, in a browser should show a JSON response.
 
 - Next, navigate into the blog-client directory and run `npm run dev`, then navigate to the 'Local:' URL as specified in the terminal, which will hopefully display a populated page with some  Blog articles.
 
